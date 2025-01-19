@@ -126,7 +126,7 @@
       "targets": [
         {
           "datasource": "${DS_PROMETHEUS}",
-          "expr": "sum(sum(kafka_connect_connect_worker_metrics_connector_count{strimzi_io_kind=~\"KafkaMirrorMaker2\",strimzi_io_cluster=\"$strimzi_mirror_maker_cluster_name\"})",
+          "expr": "sum(kafka_connect_connect_worker_metrics_connector_count{strimzi_io_kind=~\"KafkaMirrorMaker2\",strimzi_io_cluster=\"$strimzi_mirror_maker_cluster_name\"})",
           "format": "time_series",
           "intervalFactor": 2,
           "refId": "A",
