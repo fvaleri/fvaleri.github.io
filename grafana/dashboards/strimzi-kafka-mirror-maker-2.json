@@ -729,7 +729,7 @@
       "targets": [
         {
           "datasource": "${DS_PROMETHEUS}",
-          "expr": "sum(kafka_producer_producer_metrics_buffer_available_bytes{client_id=~\"mirrormaker2-cluster-offsets\"})",
+          "expr": "sum(kafka_producer_producer_metrics_buffer_available_bytes{client_id=\"mirrormaker2-cluster-offsets\"})",
           "interval": "",
           "legendFormat": "{{clientid}}",
           "refId": "A"
